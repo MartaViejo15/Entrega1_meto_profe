@@ -21,5 +21,26 @@ public class TestMyPoint {
         System.out.println(p2.distance(p1)); // distance(MyPoint another), distance from p2 (0,4) to p1 (3,0)
         System.out.println(p1.distance(5, 6)); // distance(int x, int y), distance from p1 (3,0) to given point (5,6)
         System.out.println(p1.distance()); // distance(), distance from p1 (3,0) to origin
+
+        /*Escribe ahora un programa que instancie un array de 10 puntos MyPoint, inicializados como (1,1), (2,2)...(10,10).
+        Muestra la matriz de distancias entre todos ellos.*/
+        MyPoint[] array = new MyPoint[10];
+        array[0] = new MyPoint(1,1);
+        array[1] = new MyPoint(2,2);
+        array[2] = new MyPoint(3,3);
+        array[3] = new MyPoint(4,4);
+        array[4] = new MyPoint(5,5);
+        array[5] = new MyPoint(6,6);
+        array[6] = new MyPoint(7,7);
+        array[7] = new MyPoint(8,8);
+        array[8] = new MyPoint(9,9);
+        array[9] = new MyPoint(10,10);
+        for (int i = 0; i < 10; i++) {
+            System.out.print("(");
+            for (int j = 0; j < 10; j++) {
+                System.out.print(array[i].distance(array[j])+" ");
+            }
+            System.out.println(")");
+        }
     }
 }
