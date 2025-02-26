@@ -1,8 +1,8 @@
-package b.composicionagregacion.e2_6_7_8_9;
+package es.uah.matcomp.mp.e1.b.composicionagregacion.e2_6_7_8_9;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class MyPointTest {
 
@@ -65,7 +65,7 @@ class MyPointTest {
     }
 
     @Test
-    void testDistance() { // Distance to (x,y)
+    void testDistance() {  // Distance to (x,y)
         MyPoint p1 = new MyPoint(3, 0);
         assertEquals(6.324, p1.distance(5, 6), 0.001);
     }

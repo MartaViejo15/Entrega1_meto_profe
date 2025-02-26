@@ -1,6 +1,8 @@
-package b.composicionagregacion.e2_5;
+package es.uah.matcomp.mp.e1.b.composicionagregacion.e2_5;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class AccountTest {
 
@@ -63,7 +65,7 @@ class AccountTest {
     }
 
     @Test
-    void testWithdrawSuccessful() {
+    void withdrawSuccessful() {
         Customer c1 = new Customer(16, "Lili", 'f');
         Account a1 = new Account(4, c1, 1000);
         a1.withdraw(100);

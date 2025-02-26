@@ -1,6 +1,8 @@
-package b.composicionagregacion.e2_6_7_8_9;
+package es.uah.matcomp.mp.e1.b.composicionagregacion.e2_6_7_8_9;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class MyTriangleTest {
 
@@ -17,7 +19,7 @@ class MyTriangleTest {
     }
 
     @Test
-    void testGetTypeScalene() {
+    void getType() {
         MyTriangle t = new MyTriangle(2.0f, 3.0f, 4.0f, 5.0f, 6.0f, 8.0f);
         assertEquals("Scalene", t.getType());
     }

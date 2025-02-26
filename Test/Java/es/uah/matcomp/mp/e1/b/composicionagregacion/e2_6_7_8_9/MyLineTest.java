@@ -1,6 +1,8 @@
-package b.composicionagregacion.e2_6_7_8_9;
+package es.uah.matcomp.mp.e1.b.composicionagregacion.e2_6_7_8_9;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class MyLineTest {
 

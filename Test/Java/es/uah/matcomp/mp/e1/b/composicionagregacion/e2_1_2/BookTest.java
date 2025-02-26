@@ -1,6 +1,8 @@
-package b.composicionagregacion;
+package es.uah.matcomp.mp.e1.b.composicionagregacion.e2_1_2;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
 
@@ -31,7 +33,6 @@ class BookTest {
         Book dummyBook = new Book("Java for dummy", ahTeck, 19.95, 99);
         dummyBook.setPrice(25);
         assertEquals(25, dummyBook.getPrice());
-
     }
 
     @Test

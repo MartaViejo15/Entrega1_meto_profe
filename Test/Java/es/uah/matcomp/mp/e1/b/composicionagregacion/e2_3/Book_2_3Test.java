@@ -1,6 +1,8 @@
-package b.composicionagregacion.e2_3;
+package es.uah.matcomp.mp.e1.b.composicionagregacion.e2_3;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class Book_2_3Test {
 
