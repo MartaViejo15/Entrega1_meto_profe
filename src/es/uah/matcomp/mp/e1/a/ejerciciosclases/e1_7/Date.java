@@ -1,5 +1,6 @@
 package es.uah.matcomp.mp.e1.a.ejerciciosclases.e1_7;
 
+
 public class Date {
     //atributos
     private int day;
@@ -38,17 +39,6 @@ public class Date {
         this.year = year;
     }
     public String toString() {
-        if (day <= 9 && month <= 9) {
-            return "0" + day + "/0" + month + "/" + year;
-        }
-        else if (day <= 9) {
-            return "0" + day + "/" + month + "/" + year;
-        }
-        else if (month <= 9) {
-            return day + "/0" + month + "/" + year;
-        }
-        else {
-            return day + "/" + month + "/" + year;
-        }
+        return String.format("%02d/%02d/%02d", day, month, year);
     }
 }
