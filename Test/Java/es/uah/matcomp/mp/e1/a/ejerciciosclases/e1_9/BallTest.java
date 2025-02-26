@@ -87,6 +87,6 @@ class BallTest {
 
     @Test
     void testToString() {
-        assertEquals("Ball[(1.0, 1.0),speed=(1.0, 1.0)]",b.toString());
+        assertEquals("Ball [(1.0, 1.0), speed= (1.0, 1.0)]",b.toString());
     }
 }

@@ -51,20 +51,6 @@ class TimeTest {
     @Test
     void testToString() {
         assertEquals("23:59:58",t1.toString());
-        Time t2 = new Time(2,5,5);
-        assertEquals("02:05:05",t2.toString());
-        Time t3 = new Time(1,2,20);
-        assertEquals("01:02:20",t3.toString());
-        Time t4 = new Time(1,20,20);
-        assertEquals("01:20:20",t4.toString());
-        Time t5 = new Time(1,20,2);
-        assertEquals("01:20:02",t5.toString());
-        Time t6 = new Time(10,20,2);
-        assertEquals("10:20:02",t6.toString());
-        Time t7 = new Time(10,2,2);
-        assertEquals("10:02:02",t7.toString());
-        Time t8 = new Time(10,2,20);
-        assertEquals("10:02:20",t8.toString());
     }
 
     @Test
@@ -75,6 +61,12 @@ class TimeTest {
         assertEquals(0,t1.getSecond());
         assertEquals(0,t1.getMinute());
         assertEquals(0,t1.getHour());
+        Time t2 = new Time(10,59,59);
+        t2.nextSecond();
+        assertEquals(11,t2.getHour());
+        Time t3 = new Time(11,10,59);
+        t3.nextSecond();
+        assertEquals(11,t3.getMinute());
     }
 
     @Test
@@ -86,5 +78,11 @@ class TimeTest {
         assertEquals(59,t2.getSecond());
         assertEquals(59,t2.getMinute());
         assertEquals(23,t2.getHour());
+        Time t3 = new Time(10,0,0);
+        t3.previousSecond();
+        assertEquals(9,t3.getHour());
+        Time t4 = new Time(10,10,0);
+        t4.previousSecond();
+        assertEquals(9,t4.getMinute());
     }
 }

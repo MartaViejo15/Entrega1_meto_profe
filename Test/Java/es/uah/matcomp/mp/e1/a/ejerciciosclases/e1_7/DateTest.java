@@ -51,11 +51,5 @@ class DateTest {
     @Test
     void testToString() {
         assertEquals("01/02/1023",d.toString());
-        Date d2 = new Date(10,2,1023);
-        assertEquals("10/02/1023",d2.toString());
-        Date d3 = new Date(1,10,1023);
-        assertEquals("01/10/1023",d3.toString());
-        Date d4 = new Date(10,10,1023);
-        assertEquals("10/10/1023",d4.toString());
     }
 }

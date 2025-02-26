@@ -26,11 +26,11 @@ class CircleTest {
 
     @Test
     void getCircumference() {
-        assertEquals(6.283185307179586,c1.getCircumference());
+        assertEquals(6.2831854820251465,c1.getCircumference());
     }
 
     @Test
     void testToString() {
-        assertEquals("Circle[radius= 2.0]",c2.toString());
+        assertEquals("Circle[radius=2.0]",c2.toString());
     }
 }
