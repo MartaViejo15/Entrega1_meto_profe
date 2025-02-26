@@ -1,4 +1,4 @@
-package es.uah.matcomp.mp.e1.a.ejerciciosclases;
+package es.uah.matcomp.mp.e1.a.ejerciciosclases.e1_1;
 
 /**
  * The Circle class models a circle with a radius and color.
