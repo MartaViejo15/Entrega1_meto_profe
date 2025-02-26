@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class AccountTest {
     Account a = new Account("A1","a",10);
-    Account b = new Account("A2","b");
+    Account b = new Account("A2", "b/composicionagregacion");
     @Test
     void getId() {
         assertEquals("A1",a.getId());
