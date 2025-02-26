@@ -34,8 +34,8 @@ public class LineSub extends Point {
         super.setY(beginY);
     }
     public void setEnd(int endX, int endY) {
-        super.setX(endX);
-        super.setY(endY);
+        end.setX(endX);
+        end.setY(endY);
     }
 
     public int getBeginX() {
@@ -62,18 +62,18 @@ public class LineSub extends Point {
         super.setY(beginY);
     }
     public void setEndX(int endX) {
-        super.setX(endX);
+        end.setX(endX);
     }
     public void setEndY(int endY) {
-        super.setY(endY);
+        end.setY(endY);
     }
     public void setEndXY(int endX, int endY) {
-        super.setX(endX);
-        super.setY(endY);
+        end.setX(endX);
+        end.setY(endY);
     }
 
     public int getLength() {  // Length of the line
-        return (int) Math.sqrt((getEndX()-getBeginX())*(getEndX()-getBeginY()) + (getEndY()-getBeginY())*(getEndY()-getBeginY()));
+        return (int) Math.sqrt(Math.pow(this.getEndX()-this.getBeginX(),2)+Math.pow(this.getEndY()-this.getBeginY(),2));
     }
     public double getGradient() {  // Gradient in radians
         return Math.atan2(getEndY()-getBeginY(), getEndX()-getBeginX());

@@ -14,15 +14,16 @@ public class Square extends Rectangle{
         return getWidth();
     }
     public void setSide(double side){
-        this.setWidth(side);
+        super.setWidth(side);
+        super.setLength(side);
     }
     @Override
     public void setWidth(double side){
-        super.setWidth(side);
+        setSide(side);
     }
     @Override
     public void setLength(double side){
-        super.setLength(side);
+        setSide(side);
     }
     @Override
     public String toString(){

@@ -38,5 +38,6 @@ public class TestCylinder { // save as "TestCylinder.java"
         System.out.println("New radius is: " + circle.getRadius());
         circle.setColor("Red");
         System.out.println("New color is: " + circle.getColor());
+        c3.setHeight(10);
     }
 }
